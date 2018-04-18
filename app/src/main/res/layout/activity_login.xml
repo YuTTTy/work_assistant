@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gesture_tip_layout"
+        android:gravity="center"
+        android:layout_marginTop="50.0dip"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14.0dip"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="#ff000000"
+            android:textSize="17.0dip"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37.0dip"
+        android:background="#ffffffff">
+        <EditText
+            android:id="@+id/account_et"
+            android:layout_width="fill_parent"
+            android:layout_height="55.0dip"
+            android:layout_marginLeft="27.0dip"
+            android:layout_marginRight="27.0dip"
+            android:background="@null"
+            android:drawableLeft="@drawable/nav_login_account"
+            android:drawablePadding="9.0dip"
+            android:hint="账号"
+            android:textColor="#ffb6bec1"
+            android:textColorHint="#ffb6bec1"
+            android:textSize="15.0dip"
+            />
+        <View
+            android:id="@+id/viewmiddle_line"
+            android:layout_width="380.0dip"
+            android:layout_height="1.5px"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/account_et"
+            android:layout_marginLeft="27.0dip"
+            android:layout_marginRight="27.0dip"
+            android:background="#ffccd5da" />
+        <EditText
+            android:id="@+id/password_et"
+            android:layout_width="fill_parent"
+            android:layout_height="55.0dip"
+            android:layout_below="@id/viewmiddle_line"
+            android:layout_marginLeft="27.0dip"
+            android:layout_marginRight="27.0dip"
+            android:background="@null"
+            android:drawableLeft="@drawable/nav_login_password"
+            android:drawablePadding="9.0dip"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:textColor="#ffb6bec1"
+            android:textColorHint="#ffb6bec1"
+            android:textSize="15.0dip" />
+        <View
+            android:id="@+id/viewbuttom_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1.5px"
+            android:layout_below="@id/viewmiddle_line"
+            android:layout_marginLeft="27.0dip"
+            android:layout_marginRight="27.0dip"
+            android:layout_marginTop="54.0dip"
+            android:background="#ffccd5da" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="217dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="27.0dip"
+        android:layout_marginRight="27.0dip"
+        android:layout_marginTop="35.0dip"
+        android:background="@drawable/shape"
+        android:gravity="center_horizontal"
+        android:onClick="login"
+        android:text="登录"
+        android:textColor="#ffffffff"
+        android:textSize="15.0dip"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

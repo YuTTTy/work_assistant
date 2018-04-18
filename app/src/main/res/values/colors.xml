@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffffff</color>
+    <color name="sign_page_summary_text_special_color">#ff14cabb</color>
+    <color name="main_rb_text_color">#ff636e81</color>
+    <color name="transparent">#00000000</color>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <com.attendance.work_assistant.view.MyEasyViewPager
+        android:id="@+id/viewpager_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/main_frame" />
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_alignParentBottom="true">
+
+        <RadioGroup
+            android:id="@+id/main_radio"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_work"
+                style="@style/radioButtonStyle"
+                android:background="@android:color/transparent"
+                android:checked="true"
+                android:drawableTop="@drawable/main_rb_work_selector"
+                android:text="首页"
+                android:textColor="@drawable/main_rb_textcolor_selector" />
+
+            <RadioButton
+                android:id="@+id/rb_mine"
+                style="@style/radioButtonStyle"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/main_rb_mine_selector"
+                android:text="我的"
+                android:textColor="@drawable/main_rb_textcolor_selector" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.5px"
+            android:layout_above="@+id/main_bottom"
+            android:background="#ffd1d5da" />
+
+        <LinearLayout
+            android:id="@+id/main_guidebg"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_alignParentBottom="true"
+            android:background="#ad000000"
+            android:orientation="vertical"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</RelativeLayout>
