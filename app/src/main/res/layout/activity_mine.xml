@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_main_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/info_title"
+        android:layout_width="fill_parent"
+        android:layout_height="187.0dip"
+        android:background="@drawable/img_personal_bg">
+
+        <RelativeLayout
+            android:id="@+id/image_head"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35.0dip">
+
+            <ImageView
+                android:id="@+id/img_head"
+                android:layout_width="80.0dip"
+                android:layout_height="80.0dip"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/t1"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_head"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10.0dip"
+            android:text="姓名"
+            android:textColor="@color/white"
+            android:textSize="18.0dip" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/lrview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white2"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15.0dip"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/message"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45.0dip"
+                        android:layout_marginLeft="15.0dip"
+                        android:gravity="center_vertical"
+                        android:text="消息提醒设置"
+                        android:textColor="@color/black"
+                        android:textSize="16.0dip" />
+
+                    <View
+                        android:id="@+id/myinfo_line5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/sign_line_height"
+                        android:layout_marginLeft="@dimen/sign_Left"
+                        android:background="@color/line" />
+
+                    <TextView
+                        android:id="@+id/permission_send"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45.0dip"
+                        android:layout_marginLeft="15.0dip"
+                        android:gravity="center_vertical"
+                        android:text="应用权限管理"
+                        android:textColor="@color/black"
+                        android:textSize="16.0dip" />
+
+                    <View
+                        android:id="@+id/myinfo_line1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/sign_line_height"
+                        android:layout_marginLeft="@dimen/sign_Left"
+                        android:background="@color/line" />
+
+                    <TextView
+                        android:id="@+id/login"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45.0dip"
+                        android:layout_marginLeft="15.0dip"
+                        android:gravity="center_vertical"
+                        android:text="登录设置"
+                        android:textColor="@color/black"
+                        android:textSize="16.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15.0dip"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/xszy"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45.0dip"
+                        android:layout_marginLeft="15.0dip"
+                        android:gravity="center_vertical"
+                        android:text="新手指引"
+                        android:textColor="@color/black"
+                        android:textSize="16.0dip" />
+
+                    <View
+                        android:id="@+id/myinfo_line2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/sign_line_height"
+                        android:layout_marginLeft="@dimen/sign_Left"
+                        android:background="@color/line" />
+
+                    <TextView
+                        android:id="@+id/yjfk"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45.0dip"
+                        android:layout_marginLeft="15.0dip"
+                        android:gravity="center_vertical"
+                        android:text="意见反馈"
+                        android:textColor="@color/black"
+                        android:textSize="16.0dip" />
+
+                    <View
+                        android:id="@+id/myinfo_line3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/sign_line_height"
+                        android:layout_marginLeft="@dimen/sign_Left"
+                        android:background="@color/line" />
+
+                    <TextView
+                        android:id="@+id/jcgx"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45.0dip"
+                        android:layout_marginLeft="15.0dip"
+                        android:gravity="center_vertical"
+                        android:text="检查更新"
+                        android:textColor="@color/black"
+                        android:textSize="16.0dip" />
+
+                    <View
+                        android:id="@+id/myinfo_line4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/sign_line_height"
+                        android:layout_marginLeft="@dimen/sign_Left"
+                        android:background="@color/line" />
+
+                    <TextView
+                        android:id="@+id/gyework"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45.0dip"
+                        android:layout_marginLeft="15.0dip"
+                        android:gravity="center_vertical"
+                        android:text="关于工作助手"
+                        android:textColor="@color/black"
+                        android:textSize="16.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/exit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45.0dip"
+                        android:gravity="center"
+                        android:text="退出登录"
+                        android:textColor="@color/red"
+                        android:textSize="16.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/my_guidebg"
+                android:layout_width="fill_parent"
+                android:layout_height="800.0dip"
+                android:background="#ad000000"
+                android:orientation="vertical"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
