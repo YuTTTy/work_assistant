@@ -14,13 +14,13 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            android:id="@id/attendance_back_ll"
+            android:id="@+id/attendance_back_ll"
             android:layout_width="0.0dip"
             android:layout_height="fill_parent"
             android:layout_weight="95.0">
 
             <ImageView
-                android:id="@id/back"
+                android:id="@+id/back"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_weight="1.0"
@@ -31,7 +31,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@id/news_title_tv"
+            android:id="@+id/news_title_tv"
             android:layout_width="0.0dip"
             android:layout_height="fill_parent"
             android:layout_marginLeft="10.0dip"
@@ -42,18 +42,18 @@
             android:textSize="@dimen/pagetitletextsize" />
 
         <LinearLayout
-            android:id="@id/myinfo_edit"
+            android:id="@+id/myinfo_edit"
             android:layout_width="0.0dip"
             android:layout_height="fill_parent"
             android:layout_marginRight="15.0dip"
             android:layout_weight="95.0">
 
             <ImageView
-                android:id="@id/edit_img"
+                android:id="@+id/edit_img"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:scaleType="centerInside"
-                android:src="@drawable/icon_personal_editor_nor" />
+                 />
         </LinearLayout>
     </LinearLayout>
 
@@ -69,12 +69,12 @@
             <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="85.0dip"
-                android:layout_below="@id/outside_sign_blank_info1"
+                android:layout_below="@+id/outside_sign_blank_info1"
                 android:background="@color/shenpi_background"
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@id/hdtx"
+                    android:id="@+id/hdtx"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -84,7 +84,7 @@
                     android:textSize="16.0dip" />
 
                 <ImageView
-                    android:id="@id/img"
+                    android:id="@+id/img"
                     android:layout_width="65.0dip"
                     android:layout_height="65.0dip"
                     android:layout_alignParentRight="true"
@@ -92,7 +92,7 @@
                     android:layout_marginRight="15.0dip" />
 
                 <View
-                    android:id="@id/line1"
+                    android:id="@+id/line1"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/sign_line_height"
                     android:layout_alignParentBottom="true"
@@ -101,14 +101,14 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@id/telepnone_edit"
+                android:id="@+id/telepnone_edit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/outside_sign_blank_info1"
+                android:layout_below="@+id/outside_sign_blank_info1"
                 android:background="@color/white">
 
                 <TextView
-                    android:id="@id/telephone_tab"
+                    android:id="@+id/telephone_tab"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15.0dip"
@@ -118,10 +118,10 @@
                     android:textSize="16.0dip" />
 
                 <EditText
-                    android:id="@id/mobile"
+                    android:id="@+id/mobile"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/telephone_tab"
+                    android:layout_below="@+id/telephone_tab"
                     android:layout_marginLeft="15.0dip"
                     android:background="@null"
                     android:enabled="false"
@@ -135,23 +135,23 @@
                     android:textSize="16.0dip" />
 
                 <View
-                    android:id="@id/line2"
+                    android:id="@+id/line2"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/sign_line_height"
-                    android:layout_below="@id/mobile"
+                    android:layout_below="@+id/mobile"
                     android:layout_marginLeft="15.0dip"
                     android:background="@color/line" />
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@id/phone_edit"
+                android:id="@+id/phone_edit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/outside_sign_blank_info1"
+                android:layout_below="@+id/outside_sign_blank_info1"
                 android:background="@color/white">
 
                 <TextView
-                    android:id="@id/phone_tab"
+                    android:id="@+id/phone_tab"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15.0dip"
@@ -161,10 +161,10 @@
                     android:textSize="16.0dip" />
 
                 <EditText
-                    android:id="@id/phone"
+                    android:id="@+id/phone"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/phone_tab"
+                    android:layout_below="@+id/phone_tab"
                     android:layout_marginLeft="15.0dip"
                     android:background="@null"
                     android:enabled="false"
@@ -177,10 +177,10 @@
                     android:textSize="16.0dip" />
 
                 <View
-                    android:id="@id/line3"
+                    android:id="@+id/line3"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/sign_line_height"
-                    android:layout_below="@id/phone"
+                    android:layout_below="@+id/phone"
                     android:layout_marginLeft="15.0dip"
                     android:background="@color/line" />
             </RelativeLayout>
@@ -188,11 +188,11 @@
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/outside_sign_blank_info1"
+                android:layout_below="@+id/outside_sign_blank_info1"
                 android:background="@color/white">
 
                 <TextView
-                    android:id="@id/email_tab"
+                    android:id="@+id/email_tab"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15.0dip"
@@ -202,10 +202,10 @@
                     android:textSize="16.0dip" />
 
                 <TextView
-                    android:id="@id/email"
+                    android:id="@+id/email"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/email_tab"
+                    android:layout_below="@+id/email_tab"
                     android:layout_marginBottom="13.0dip"
                     android:layout_marginLeft="15.0dip"
                     android:layout_marginTop="4.0dip"
@@ -217,13 +217,13 @@
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/outside_sign_blank_info1"
+                android:layout_below="@+id/outside_sign_blank_info1"
                 android:layout_marginTop="15.0dip"
                 android:background="@color/white"
                 android:visibility="gone">
 
                 <TextView
-                    android:id="@id/department_tab"
+                    android:id="@+id/department_tab"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15.0dip"
@@ -233,10 +233,10 @@
                     android:textSize="16.0dip" />
 
                 <TextView
-                    android:id="@id/department"
+                    android:id="@+id/department"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/department_tab"
+                    android:layout_below="@+id/department_tab"
                     android:layout_marginLeft="15.0dip"
                     android:paddingBottom="13.0dip"
                     android:paddingTop="4.0dip"
@@ -245,10 +245,10 @@
                     android:textSize="16.0dip" />
 
                 <View
-                    android:id="@id/line7"
+                    android:id="@+id/line7"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/sign_line_height"
-                    android:layout_below="@id/department"
+                    android:layout_below="@+id/department"
                     android:layout_marginLeft="15.0dip"
                     android:background="@color/line" />
             </RelativeLayout>
@@ -256,12 +256,12 @@
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/outside_sign_blank_info1"
+                android:layout_below="@+id/outside_sign_blank_info1"
                 android:background="@color/white"
                 android:visibility="gone">
 
                 <TextView
-                    android:id="@id/position_tab"
+                    android:id="@+id/position_tab"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15.0dip"
@@ -271,10 +271,10 @@
                     android:textSize="16.0dip" />
 
                 <TextView
-                    android:id="@id/position"
+                    android:id="@+id/position"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/position_tab"
+                    android:layout_below="@+id/position_tab"
                     android:layout_marginLeft="15.0dip"
                     android:paddingBottom="13.0dip"
                     android:paddingTop="4.0dip"
@@ -283,10 +283,10 @@
                     android:textSize="16.0dip" />
 
                 <View
-                    android:id="@id/line8"
+                    android:id="@+id/line8"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/sign_line_height"
-                    android:layout_below="@id/position"
+                    android:layout_below="@+id/position"
                     android:layout_marginLeft="15.0dip"
                     android:background="@color/line" />
             </RelativeLayout>
@@ -294,12 +294,12 @@
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/outside_sign_blank_info1"
+                android:layout_below="@+id/outside_sign_blank_info1"
                 android:layout_marginTop="15.0dip"
                 android:background="@color/white">
 
                 <TextView
-                    android:id="@id/address_tab"
+                    android:id="@+id/address_tab"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15.0dip"
@@ -309,10 +309,10 @@
                     android:textSize="16.0dip" />
 
                 <TextView
-                    android:id="@id/address"
+                    android:id="@+id/address"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/address_tab"
+                    android:layout_below="@+id/address_tab"
                     android:layout_marginLeft="15.0dip"
                     android:paddingBottom="13.0dip"
                     android:paddingTop="4.0dip"
@@ -321,23 +321,23 @@
                     android:textSize="16.0dip" />
 
                 <View
-                    android:id="@id/line5"
+                    android:id="@+id/line5"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/sign_line_height"
-                    android:layout_below="@id/address"
+                    android:layout_below="@+id/address"
                     android:layout_marginLeft="15.0dip"
                     android:background="@color/line" />
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@id/address_no_edit"
+                android:id="@+id/address_no_edit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/outside_sign_blank_info1"
+                android:layout_below="@+id/outside_sign_blank_info1"
                 android:background="@color/white">
 
                 <TextView
-                    android:id="@id/address_no_tab"
+                    android:id="@+id/address_no_tab"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15.0dip"
@@ -347,10 +347,10 @@
                     android:textSize="16.0dip" />
 
                 <EditText
-                    android:id="@id/address_no"
+                    android:id="@+id/address_no"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/address_no_tab"
+                    android:layout_below="@+id/address_no_tab"
                     android:layout_marginLeft="15.0dip"
                     android:background="@null"
                     android:enabled="false"
@@ -363,10 +363,10 @@
                     android:textSize="16.0dip" />
 
                 <View
-                    android:id="@id/line6"
+                    android:id="@+id/line6"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/sign_line_height"
-                    android:layout_below="@id/address_no"
+                    android:layout_below="@+id/address_no"
                     android:layout_marginBottom="20.0dip"
                     android:layout_marginLeft="15.0dip"
                     android:background="@color/white" />

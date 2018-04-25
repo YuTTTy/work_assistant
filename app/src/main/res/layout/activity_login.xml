@@ -18,7 +18,7 @@
             android:layout_width="55dip"
             android:layout_height="55dip"
             android:layout_gravity="center_horizontal"
-            android:src="@drawable/t1" />
+            android:src="@drawable/head" />
 
         <TextView
             android:layout_width="fill_parent"
@@ -106,6 +106,28 @@
         android:textColor="#ffffffff"
         android:textSize="15.0dip"
         android:layout_gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/login_success_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="15.0px"
+        android:layout_marginRight="15.0px"
+        android:layout_marginTop="62.0px"
+        android:background="#ff3f3f3f"
+        android:paddingBottom="10.0px"
+        android:paddingTop="21.0px"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/login_success_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ff3f3f3f"
+            android:textSize="20.0dip" />
+    </RelativeLayout>
 
 
 </LinearLayout>

@@ -24,7 +24,7 @@
                 android:layout_width="80.0dip"
                 android:layout_height="80.0dip"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/t1"
+                android:src="@drawable/head"
                 android:scaleType="fitXY" />
         </RelativeLayout>
 
