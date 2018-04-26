@@ -1,9 +1,22 @@
 apply plugin: 'com.android.application'
 
 android {
+    useLibrary 'org.apache.http.legacy'/*httpclient过时解决办法*/
     compileSdkVersion 26
     buildToolsVersion "27.0.3"
 
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES' // will not include DEPENDENCIES file
+//        exclude 'META-INF/NOTICE' // will not include NOTICE file
+//        exclude 'META-INF/LICENSE' // will not include LICENSE file
+//        // as noted by @Vishnuvathsan you may also need to include
+//        // variations on the file name. It depends on your dependencies.
+//        // Some other common variations on notice and license file names
+//        exclude 'META-INF/notice'
+//        exclude 'META-INF/notice.txt'
+//        exclude 'META-INF/license'
+//        exclude 'META-INF/license.txt
+    }
     defaultConfig {
         applicationId "com.attendance.work_assistant"
         minSdkVersion 15
@@ -18,6 +31,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    sourceSets {
+        main { // 设置Jni so文件路径 如果有jniLibs目录就不需要设置
+            jniLibs.srcDirs = ['libs']
+        }
+    }
 }
 
 dependencies {
@@ -27,7 +45,8 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-    //implementation files('src/main/jniLibs/BaiduLBS_Android.jar')
     implementation 'com.jakewharton:butterknife:8.5.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    implementation 'com.google.code.gson:gson:2.2.4'
+    implementation files('libs/commons-lang3-3.1.jar')
 }

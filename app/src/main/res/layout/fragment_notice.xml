@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/login_out_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/blue"
+            android:layout_marginLeft="@dimen/usually_spacing_big"
+            android:layout_marginRight="@dimen/usually_spacing_big"
+            android:layout_marginBottom="100dp"
+            android:gravity="center"
+            android:padding="@dimen/usually_spacing_middle"
+            android:text="退出登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_title" />
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

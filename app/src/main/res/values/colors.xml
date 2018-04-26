@@ -7,4 +7,29 @@
     <color name="sign_page_summary_text_special_color">#ff14cabb</color>
     <color name="main_rb_text_color">#ff636e81</color>
     <color name="transparent">#00000000</color>
+
+    <!--基础色彩-->
+    <color name="baseBg">#F8F8FA</color><!--用于客户端背景颜色-->
+    <color name="titleBg">#6ab7ff</color><!--标题栏背景颜色-->
+    <color name="baseTextMain">#485259</color><!--用于主要文字，标题，内容-->
+    <color name="baseTextSub">#878787</color><!--用于次级文字，标题，内容-->
+    <color name="baseTextAssist">#CFCFCF</color><!--用于主要文字文字辅助美容，提示文字内容，标签内容-->
+    <color name="textRed">#ff0000</color>
+    <color name="textRedSecond">#ff6b4d</color>
+    <color name="textWhite">#ffffff</color>
+    <color name="textBlue">#99ccff</color>
+    <color name="baseButton">#6ab7ff</color>
+    <color name="baseLine">#ECECEC</color><!--用于线条颜色-->
+
+    <!-- 通用 -->
+    <color name="alpha">#00ffffff</color>
+    <color name="alpha_black">#aa000000</color>
+    <color name="black">#000000</color>
+    <color name="blue_black">#000055</color>
+    <color name="red">#ff6b4d</color>
+    <color name="orange">#FF8000</color>
+    <color name="yellow">#cccc33</color>
+    <color name="blue">#99ccff</color>
+    <color name="green">#99cc33</color>
+    <color name="gray">#d0d0d0</color>
 </resources>
