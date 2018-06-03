@@ -3,6 +3,7 @@ package com.attendance.work_assistant.ui.login;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,6 +12,7 @@ import android.widget.Toast;
 import com.attendance.work_assistant.R;
 import com.attendance.work_assistant.dao.UserDataManager;
 import com.attendance.work_assistant.model.UserData;
+import com.attendance.work_assistant.utils.common.ToastUtils;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -82,7 +84,7 @@ public class RegisterActivity extends AppCompatActivity {
                     Toast.makeText(this, "注册成功！！！",Toast.LENGTH_SHORT).show();
                     Intent intent_Register_to_Login = new Intent(RegisterActivity.this,LoginActivity
                             .class) ;
-                    //切换User Activity至Login Activity
+                    //切换Register Activity至Login Activity
                     startActivity(intent_Register_to_Login);
                     finish();
                 }
@@ -104,6 +106,22 @@ public class RegisterActivity extends AppCompatActivity {
             return false;
         }
         return true;
+    }
+    long exitTime = 0L; //退出时间
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN) {
+            if (System.currentTimeMillis() - exitTime > 2000) {
+                ToastUtils.showShort(RegisterActivity.this, "再按一次返回退出程序");
+                exitTime = System.currentTimeMillis();
+            } else {
+//                android.os.Process.killProcess(Process.myPid());
+                finish();
+//                System.exit(0);
+            }
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
     }
 
 }

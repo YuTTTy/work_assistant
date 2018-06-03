@@ -6,6 +6,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -17,6 +18,7 @@ import android.widget.Toast;
 import com.attendance.work_assistant.MainActivity;
 import com.attendance.work_assistant.R;
 import com.attendance.work_assistant.dao.UserDataManager;
+import com.attendance.work_assistant.utils.common.ToastUtils;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -182,5 +184,22 @@ public class LoginActivity extends Activity {
             mUserDataManager = null;
         }
         super.onPause();
+    }
+
+    long exitTime = 0L; //退出时间
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN) {
+            if (System.currentTimeMillis() - exitTime > 2000) {
+                ToastUtils.showShort(LoginActivity.this, "再按一次返回退出程序");
+                exitTime = System.currentTimeMillis();
+            } else {
+//                android.os.Process.killProcess(Process.myPid());
+                finish();
+//                System.exit(0);
+            }
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
     }
 }

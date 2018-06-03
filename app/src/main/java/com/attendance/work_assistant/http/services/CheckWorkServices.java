@@ -71,13 +71,10 @@ public class CheckWorkServices extends BaseService {
         Map<String, Object> params = new HashMap<>();
         params.put("personId", personId);
         params.put("personName", personName);
-//        params.put("createdate", createdate);
-//        params.put("createTime", createTime);
         params.put("longitude", longitude);
         params.put("latitude", latitude);
         params.put("label", label);
         params.put("signflag", signflag);
-        //        getVerificationParams(params, 1);//获取验证参数
         Map<String,String> mHeaders = getHeader();
         GsonRequest<RepBase<List<Map<String,Object>>>> request = null;
         try {

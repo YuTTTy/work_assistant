@@ -3,7 +3,12 @@ package com.attendance.work_assistant.base;
 import android.app.Application;
 import android.content.Context;
 
+import com.facebook.stetho.Stetho;
+import com.facebook.stetho.okhttp3.StethoInterceptor;
+
 import java.util.Map;
+
+import okhttp3.OkHttpClient;
 
 /**
  * Created by Administrator on 2016/6/17.
@@ -32,6 +37,10 @@ public class MyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        Stetho.initializeWithDefaults(this);
+        new OkHttpClient.Builder()
+                .addNetworkInterceptor(new StethoInterceptor())
+                .build();
         myApplication = this;
         applicationContext = this;
     }

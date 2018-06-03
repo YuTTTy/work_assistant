@@ -34,8 +34,8 @@ import static com.attendance.work_assistant.base.BaseActivity.setSwipRefresh;
  * Created by helinjie on 2017/9/2.  工程
  */
 
-public class EngineeFragment extends Fragment {
-    private static final String TAG = EngineeFragment.class.getSimpleName();
+public class HomeFragment extends Fragment {
+    private static final String TAG = HomeFragment.class.getSimpleName();
     private SwipeRefreshLayout swipeLayout;
     private Activity activity;
     private GridView grid_view;
@@ -49,7 +49,7 @@ public class EngineeFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_enginee, container, false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
         return view;
     }
 

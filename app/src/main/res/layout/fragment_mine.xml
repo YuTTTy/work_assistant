@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/info_title"
+            android:layout_width="fill_parent"
+            android:layout_height="187.0dip"
+            android:background="@drawable/img_personal_bg">
+
+            <RelativeLayout
+                android:id="@+id/image_head"
+                android:layout_width="80.0dip"
+                android:layout_height="80.0dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35.0dip">
+
+                <ImageView
+                    android:id="@+id/img_head"
+                    android:layout_width="80.0dip"
+                    android:layout_height="80.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/head" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_head"
+                android:layout_centerHorizontal="true"
+                android:text="姓名"
+                android:textColor="@color/white"
+                android:textSize="18.0dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/info_text"
+            android:layout_below="@id/info_title"
+            android:layout_width="fill_parent"
+            android:layout_height="382dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="0dp">
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="353dp"
+                android:layout_height="45.0dip"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="31dp"
+                android:gravity="center_vertical"
+                android:text="消息提醒设置"
+                android:textColor="@color/black"
+                android:textSize="16.0dip" />
+
+
+            <TextView
+                android:id="@+id/permission_send"
+                android:layout_width="353dp"
+                android:layout_height="45.0dip"
+                android:layout_above="@+id/login"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="-86dp"
+                android:layout_marginStart="31dp"
+                android:gravity="center_vertical"
+                android:text="应用权限管理"
+                android:textColor="@color/black"
+                android:textSize="16.0dip" />
+
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="353dp"
+                android:layout_height="45.0dip"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="86dp"
+                android:gravity="center_vertical"
+                android:text="登录设置"
+                android:textColor="@color/black"
+                android:textSize="16.0dip" />
+
+            <TextView
+                android:id="@+id/yjfk"
+                android:layout_width="353dp"
+                android:layout_height="46dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/login"
+                android:layout_marginStart="31dp"
+                android:gravity="center_vertical"
+                android:text="意见反馈"
+                android:textColor="@color/black"
+                android:textSize="16.0dip" />
+
+
+            <TextView
+                android:id="@+id/jcgx"
+                android:layout_below="@+id/yjfk"
+                android:layout_width="353dp"
+                android:layout_height="45.0dip"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="31dp"
+                android:gravity="center_vertical"
+                android:text="检查更新"
+                android:textColor="@color/black"
+                android:textSize="16.0dip" />
+
+            <TextView
+                android:id="@+id/gyework"
+                android:layout_below="@+id/jcgx"
+                android:layout_width="353dp"
+                android:layout_height="45.0dip"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="31dp"
+                android:gravity="center_vertical"
+                android:text="关于蜗壳"
+                android:textColor="@color/black"
+                android:textSize="16.0dip" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

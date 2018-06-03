@@ -14,18 +14,18 @@ import com.attendance.work_assistant.R;
 import static com.attendance.work_assistant.base.BaseActivity.setSwipRefresh;
 
 /**
- * Created by helinjie on 2017/9/2.   租凭
+ * Created by helinjie on 2017/9/2.   我的
  */
 
-public class LeaseFragment extends Fragment {
-    private static final String TAG = LeaseFragment.class.getSimpleName();
+public class MineFragment extends Fragment {
+    private static final String TAG = MineFragment.class.getSimpleName();
     private SwipeRefreshLayout swipeLayout;
     private Activity activity;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_lease, container, false);
+        View view = inflater.inflate(R.layout.fragment_mine, container, false);
         return view;
     }
 

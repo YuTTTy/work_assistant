@@ -299,7 +299,8 @@ public class DocumentActivity extends BaseActivity {
             case R.id.apply_document_start_time_layout:
                 ChangeBirthDialog startTimeDialog = new ChangeBirthDialog(context);
                 Calendar startCalendar = Calendar.getInstance();
-                startTimeDialog.setDate(startCalendar.get(Calendar.YEAR), startCalendar.get(Calendar.MONTH) + 1, startCalendar.get(Calendar.DATE));
+                startTimeDialog.setDate(startCalendar.get(Calendar.YEAR), startCalendar.get(Calendar.MONTH) + 1,
+                        startCalendar.get(Calendar.DATE));
                 startTimeDialog.show();
                 startTimeDialog.setBirthdayListener(new ChangeBirthDialog.OnBirthListener() {
                     @Override

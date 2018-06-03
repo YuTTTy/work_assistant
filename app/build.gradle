@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     useLibrary 'org.apache.http.legacy'/*httpclient过时解决办法*/
     compileSdkVersion 26
-    buildToolsVersion "27.0.3"
+    buildToolsVersion '27.0.3'
 
     packagingOptions {
         exclude 'META-INF/DEPENDENCIES' // will not include DEPENDENCIES file
@@ -19,7 +19,7 @@ android {
     }
     defaultConfig {
         applicationId "com.attendance.work_assistant"
-        minSdkVersion 15
+        minSdkVersion 19
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -36,6 +36,10 @@ android {
             jniLibs.srcDirs = ['libs']
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -49,4 +53,8 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
     implementation 'com.google.code.gson:gson:2.2.4'
     implementation files('libs/commons-lang3-3.1.jar')
+    // Stetho core
+    implementation 'com.facebook.stetho:stetho:1.5.0'
+    //If you want to add a network helper
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
 }

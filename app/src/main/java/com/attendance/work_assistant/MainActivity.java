@@ -27,8 +27,8 @@ import com.attendance.work_assistant.base.BaseActivity;
 import com.attendance.work_assistant.base.MyApplication;
 import com.attendance.work_assistant.base.MyConstant;
 import com.attendance.work_assistant.fragment.ContactsFragment;
-import com.attendance.work_assistant.fragment.EngineeFragment;
-import com.attendance.work_assistant.fragment.LeaseFragment;
+import com.attendance.work_assistant.fragment.HomeFragment;
+import com.attendance.work_assistant.fragment.MineFragment;
 import com.attendance.work_assistant.fragment.NoticeFragment;
 import com.attendance.work_assistant.http.services.TrailServices;
 import com.attendance.work_assistant.manager.polling.PollingService;
@@ -48,10 +48,11 @@ public class MainActivity extends BaseActivity {
     private SwipeRefreshLayout swipeLayout;
     public static MainActivity instance = null;
 
-    private int[] imageArray = {R.drawable.selector_tab_contacts, R.drawable.selector_tab_notice,
-            R.drawable.selector_tab_lease, R.drawable.selector_tab_mine};
-    private String[] textArray = {"通讯录", "公告", "租凭", "工程"};
-    private Class fragmentArray[] = {ContactsFragment.class, NoticeFragment.class, LeaseFragment.class, EngineeFragment.class};
+    private int[] imageArray = {R.drawable.main_rb_work_selector,R.drawable.selector_tab_contacts, R
+            .drawable.selector_tab_notice,R.drawable.main_rb_mine_selector};
+    private String[] textArray = {"主页","通讯录", "公告","我的"};
+    private Class fragmentArray[] = {HomeFragment.class,ContactsFragment.class, NoticeFragment
+            .class, MineFragment.class};
     private FragmentTabHost tabHost;
 
     private AMapLocationClient locationClient = null;
@@ -197,7 +198,7 @@ public class MainActivity extends BaseActivity {
         locationClient = new AMapLocationClient(this.getApplicationContext());
         locationOption = new AMapLocationClientOption();
         locationOption.setLocationMode(AMapLocationClientOption.AMapLocationMode.Hight_Accuracy);//可选，设置定位模式，可选的模式有高精度、仅设备、仅网络。默认为高精度模式
-        locationOption.setGpsFirst(false);//可选，设置是否gps优先，只在高精度模式下有效。默认关闭
+        locationOption.setGpsFirst(true);//可选，设置是否gps优先，只在高精度模式下有效。默认关闭
         locationOption.setHttpTimeOut(30000);//可选，设置网络请求超时时间。默认为30秒。在仅设备模式下无效
         locationOption.setInterval(1*60*1000);//可选，设置定位间隔。默认为2秒
         locationOption.setNeedAddress(true);//可选，设置是否返回逆地理地址信息。默认是true
